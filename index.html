@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кіану Рівз - Візитка</title>
+    
+    <!-- Підключаємо Bootstrap CSS (бібліотеку для гарного оформлення сторінки) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Додаткові прості стилі для гарного вигляду */
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навігаційна панель вгорі -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Портфоліо Актора</a>
+        </div>
+    </nav>
+
+    <!-- Головна секція (Про особистість) -->
+    <section class="hero-section text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <!-- Фото Кіану Рівза з Вікіпедії (можна замінити на будь-яке інше посилання) -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Keanu_Reeves_2019.jpg" alt="Кіану Рівз" class="profile-img">
+                </div>
+                <div class="col-md-8">
+                    <span class="badge bg-primary mb-2">Актор, музикант, благодійник</span>
+                    <h1 class="display-4 fw-bold">Кіану Рівз</h1>
+                    <p class="lead text-muted">Канадський актор, кінорежисер, продюсер та просто чудова людина.</p>
+                    <p>Відомий своїми ролями у франшизах «Матриця», «Джон Вік», а також у фільмах «Швидкість», «Адвокат диявола» та багатьох інших. Зарекомендував себе не лише як талановитий артист, а й як надзвичайно добра та щедра людина в реальному житті.</p>
+                    <a href="#roles" class="btn btn-outline-dark btn-lg mt-2">Знакові ролі</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція з картками ролей (використовуємо сітку Bootstrap) -->
+    <section id="roles" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Найвідоміші ролі</h2>
+            <div class="row g-4">
+                
+                <!-- Картка 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Нео («Матриця»)</h5>
+                            <p class="card-text text-muted">Культова роль хакера Томаса Андерсона, який дізнається, що наш світ — це симуляція, і стає обраним для порятунку людства.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge bg-secondary">Фантастика</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Картка 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Джон Вік («Джон Вік»)</h5>
+                            <p class="card-text text-muted">Історія про колишнього найманого вбивцю, який змушений повернутися до своєї справи, щоб помститися за особисту втрату.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge bg-secondary">Екшн</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Картка 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Константин («Костянтин»)</h5>
+                            <p class="card-text text-muted">Екзорцист та медіум Джон Константин веде боротьбу з демонами, що намагаються прорватися в наш світ.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge bg-secondary">Містика</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція з цікавими фактами -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Цікаві факти</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group list-group-flush shadow-sm rounded">
+                        <li class="list-group-item py-3">🏍️ Захоплюється мотоциклами та є співзасновником компанії Arch Motorcycle.</li>
+                        <li class="list-group-item py-3">🤝 Відомий своєю благодійністю — часто таємно жертвує мільйони дитячим лікарням та допомагає персоналу на знімальних майданчиках.</li>
+                        <li class="list-group-item py-3">🎸 Грав на бас-гітарі в альтернативній рок-групі Dogstar у 1990-х роках.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Нижній колонтитул (Футер) -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; Сайт-візитка Кіану Рівза. Лабораторна робота №0.</p>
+        </div>
+    </footer>
+
+    <!-- Підключаємо Bootstrap JS для роботи мобільних меню тощо -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
